@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: black;
+        }
+        .navbar-custom {
+            background-color: transparent;
+            border: none;
+        }
+        .navbar-custom .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+        .navbar-custom .navbar-nav > li > a {
+            color: white;
+        }
+        .navbar-custom .navbar-nav > li > a:hover {
+            color: #ccc;
+        }
+        .hero-section {
+            position: relative;
+            background: url('your-background-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-text {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero-subtext {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .hero-buttons .btn {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+            background-color: transparent;
+        }
+        .btn-outline:hover {
+            background-color: white;
+            color: black;
+        }
+        .btn-yellow {
+            background-color: #ffc107;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background-color: #ffca2c;
+            color: black;
+        }
+        .progress-bar-typography {
+            background-color: #ff6f61;
+        }
+
+        .progress-bar-design {
+            background-color: #f7ca4a;
+        }
+
+        .progress-bar-development {
+            background-color: #8e44ad;
+        }
+
+        .icon-text {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #6c757d;
+        }
+        .testimonial-section {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .testimonial-section .testimonial {
+            font-style: italic;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .testimonial-section .testimonial-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-section .testimonial-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .service-icon {
+            font-size: 40px;
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+
+        .latest-news {
+            background-color: #343a40;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .read-more {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .news-btn {
+            margin-top: 20px;
+        }
+        .stats {
+            background-color: #f2a900;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .stats h2 {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+        .team {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .team img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+        .contact-form {
+            padding: 50px 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer h5 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Bootstrap Navbar Example</title>
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">LOGODESIGN</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        <div class="hero-section">
+            <div class="hero-text">
+                Clean. Slick. Pixel Perfect
+            </div>
+            <div class="hero-subtext">
+                Ildy is a great one page theme, perfect for developers and designers but also for someone who just wants a new website for his business. Try it now!
+            </div>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-outline">Learn more</a>
+                <a href="#" class="btn btn-yellow">Download</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h2 class="text-center">About</h2>
+        <p class="text-center">
+            It is an amazing one-page theme with great features that offers an incredible experience. It is easy to install, 
+            make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, 
+            exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.
+        </p>
+        
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <span class="icon-text">A Typography</span>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-typography" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <span class="icon-text">Design</span>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-design" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">82%</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <span class="icon-text">Development</span>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-development" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">86%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="text-center">Projects</h2>
+        <p class="text-center">You'll love our work. Check it out!</p>
+        
+        <div class="row text-center">
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Project Image 1">
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Project Image 2">
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Project Image 3">
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Project Image 4">
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonial-section">
+        <h2>Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/100x100" class="testimonial-img" alt="Testimonial Image 1">
+                    <div class="testimonial">
+                        "Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, this theme might be exactly what you need. It is a slick theme with a lot of features to choose from."
+                    </div>
+                    <div class="testimonial-name">Mike Muller</div>
+                </div>
+                <!-- Add more carousel-item divs for additional testimonials -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="text-center">Services</h2>
+        <p class="text-center">
+            In order to help you grow your business, our carefully selected experts can advise you in the following areas:
+        </p>
+    
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="service-icon">
+                    <i class="bi bi-pencil-square"></i> <!-- Icon for Web Design -->
+                </div>
+                <h4>Web Design</h4>
+                <p>Consectetur adipiscing elit. Praesent molestie urna hendrerit erat interdum tempus. Aliquam a leo iursus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+            </div>
+            <div class="col-md-4">
+                <div class="service-icon">
+                    <i class="bi bi-code-slash"></i> <!-- Icon for Web Development -->
+                </div>
+                <h4>Web Development</h4>
+                <p>Consectetur adipiscing elit. Praesent molestie urna hendrerit erat interdum tempus. Aliquam a leo iursus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+            </div>
+            <div class="col-md-4">
+                <div class="service-icon">
+                    <i class="bi bi-bar-chart-line"></i> <!-- Icon for SEO Analysis -->
+                </div>
+                <h4>SEO Analysis</h4>
+                <p>Consectetur adipiscing elit. Praesent molestie urna hendrerit erat interdum tempus. Aliquam a leo iursus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="latest-news">
+        <h2>Latest News</h2>
+        <p>If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have nothing to lose!</p>
+        <button class="btn btn-warning news-btn">See blog</button>
+    
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="News 1">
+                        <div class="card-body">
+                            <h5 class="card-title">We Have Made this Theme SEO Friendly</h5>
+                            <p class="card-text">This One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings...</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="News 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Stunning One Page WordPress Theme For Masses</h5>
+                            <p class="card-text">This theme is not just free, it is free for private and commercial use since it is licensed under GPL...</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="News 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hello world!</h5>
+                            <p class="card-text">Welcome to colorlib.com. This is our first post around this WordPress theme. Now show that you can make out of it!...</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid stats">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>14</h2>
+                <p>Projects</p>
+            </div>
+            <div class="col-md-4">
+                <h2>7</h2>
+                <p>Clients</p>
+            </div>
+            <div class="col-md-4">
+                <h2>14</h2>
+                <p>Coffees</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="container team">
+        <h2>Team</h2>
+        <p>Meet the people that are going to take your business to the next level.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/120" alt="Mark Lawrence">
+                <h4>Mark Lawrence</h4>
+                <p>Web Designer</p>
+                <p>Creative, detail-oriented, always focused.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/120" alt="Jane Stanton">
+                <h4>Jane Stanton</h4>
+                <p>SEO Specialist</p>
+                <p>Curious, tech-geek and gets serious when it comes to work.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/120" alt="John Smith">
+                <h4>John Smith</h4>
+                <p>Developer</p>
+                <p>Enthusiastic, passionate with great sense of humor.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container contact-form">
+        <h2>Contact Us</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Address</h5>
+                <p>Street 221B Baker Street, London, UK</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Customer Support</h5>
+                <p>E-mail: [email protected]</p>
+                <p>Phone: (555) 555-5555</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <p>
+                    <a href="#">Twitter</a> | 
+                    <a href="#">Facebook</a> | 
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Your Name (required)</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Your Email (required)</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputSubject">Subject</label>
+                <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Your Message</label>
+                <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>PRODUCTS</h5>
+                    <ul>
+                        <li><a href="#">Our work</a></li>
+                        <li><a href="#">Club</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Announcement</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>INFORMATION</h5>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>SUPPORT</h5>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
